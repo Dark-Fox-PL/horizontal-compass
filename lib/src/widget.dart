@@ -236,6 +236,7 @@ class CompassPainter extends CustomPainter {
     final Paint centerMarkerPaint = Paint()
       ..color = cursorColor
       ..strokeWidth = cursorWidth;
+
     canvas.drawLine(
       Offset(size.width / 2, 0),
       Offset(size.width / 2, size.height),
