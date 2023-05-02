@@ -40,19 +40,19 @@ Widget requires 3 variables to be set:
 ## Customization
 Widget allows you to customize its look and behavior.
 
-| Field         |              Default value              | Description                                                                                                                              |
-|:--------------|:---------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------|
-| spacing       |                 `15.0`                  |  Defines space between the ruler lines.                                                                                                  |
-| width         |                 `null`                  |  Allows to determine widget width, if null it'll cover all possible space.                                                               |
-| height        |                 `30.0`                  |  Widget height.                                                                                                                          |
-| start         |                  `0.0`                  |  Initial value.                                                                                                                          |
-| end           |                 `360.0`                 |  Last value.                                                                                                                             |
-| type          |     `HorizontalCompassType.finite`      |  Determines main behavior of the widget. Type `finite` presents widget from start to the end value, while type `infinite` makes it loop. |
-| rulerPosition | `HorizontalCompassRulerPosition.center` |  Determines how ruler lines are positioned to each other.                                                                                |
-| cursorColor   |          `Colors.transparent`           |  Color of the central point of a widget.                                                                                                 |
-| cursorWidth   |                  `5.0`                  |  Width of the central point of a widget.                                                                                                 |
-| lineWidth     |                  `2.0`                  |  Set width for a single line.                                                                                                            |
-| markPosition  |                   `5`                   |  Determines which line should have increased height.                                                                                     |
-| value         |                                         |  *required* Current value of the widget.                                                                                                 |
-| segments      |                                         |  *required* Map with segments values.                                                                                                    |
-| colors        |                                         |  *required* List of colors to be set for each segment.                                                                                   |
+| Field         |              Default value              | Description                                                                                                                             |
+|:--------------|:---------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------|
+| spacing       |                 `15.0`                  | Defines space between the ruler lines.                                                                                                  |
+| width         |                 `null`                  | Allows to determine widget width, if null it'll cover all possible space.                                                               |
+| height        |                 `30.0`                  | Widget height.                                                                                                                          |
+| start         |                  `0.0`                  | Initial value.                                                                                                                          |
+| end           |                 `360.0`                 | Last value.                                                                                                                             |
+| type          |     `HorizontalCompassType.finite`      | Determines main behavior of the widget. Type `finite` presents widget from start to the end value, while type `infinite` makes it loop. |
+| rulerPosition | `HorizontalCompassRulerPosition.center` | Determines how ruler lines are positioned to each other.                                                                                |
+| cursorColor   |          `Colors.transparent`           | Color of the central point of a widget.                                                                                                 |
+| cursorWidth   |                  `5.0`                  | Width of the central point of a widget.                                                                                                 |
+| lineWidth     |                  `2.0`                  | Set width for a single line.                                                                                                            |
+| markPosition  |                   `5`                   | Determines which line should have increased height.                                                                                     |
+| value         |                                         | **required** Current value of the widget.                                                                                               |
+| segments      |                                         | **required** Map with segments values.                                                                                                  |
+| colors        |                                         | **required** List of colors to be set for each segment.                                                                                 |
