@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 enum HorizontalCompassType { finite, infinite }
+
 enum HorizontalCompassRulerPosition { top, center, bottom }
 
 class HorizontalCompass extends StatefulWidget {
@@ -41,15 +42,18 @@ class HorizontalCompass extends StatefulWidget {
   HorizontalCompassState createState() => HorizontalCompassState();
 }
 
-class HorizontalCompassState extends State<HorizontalCompass> with TickerProviderStateMixin {
+class HorizontalCompassState extends State<HorizontalCompass>
+    with TickerProviderStateMixin {
   late AnimationController _animationController;
   late Animation<double> _animation;
 
   @override
   void initState() {
     super.initState();
-    _animationController = AnimationController(vsync: this, duration: const Duration(milliseconds: 500));
-    _animation = Tween<double>(begin: widget.value, end: widget.value).animate(_animationController);
+    _animationController = AnimationController(
+        vsync: this, duration: const Duration(milliseconds: 500));
+    _animation = Tween<double>(begin: widget.value, end: widget.value)
+        .animate(_animationController);
   }
 
   @override
@@ -73,7 +77,8 @@ class HorizontalCompassState extends State<HorizontalCompass> with TickerProvide
         newValue = oldValue + delta;
       }
 
-      _animation = Tween<double>(begin: _animation.value, end: newValue).animate(_animationController);
+      _animation = Tween<double>(begin: _animation.value, end: newValue)
+          .animate(_animationController);
       _animationController.forward(from: 0);
     }
   }
