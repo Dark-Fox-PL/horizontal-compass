@@ -4,20 +4,59 @@ enum HorizontalCompassType { finite, infinite }
 
 enum HorizontalCompassRulerPosition { top, center, bottom }
 
+/// Main widget class.
 class HorizontalCompass extends StatefulWidget {
+  /// Stores current value for widget.
   final double value;
+
+  /// Determines spaces between ruler lines.
   final double spacing;
+
+  /// Set widget width, if [width] is set to null, whole possible width will be used.
   final double? width;
+
+  /// Set widget height.
   final double height;
+
+  /// Set first value for widget.
   final double start;
+
+  /// Set last value for widget.
   final double end;
+
+  /// Required field with dataset, String might be random, as it's not used (to things other than just code organisation) and maybe labels
+  /// in the future version.
+  ///
+  /// ```dart
+  /// Map<String, double> segments = {
+  ///   'a': 10.0,
+  ///   'b': 30.0,
+  ///   'c': 5.0
+  /// }
+  /// ```
+  ///
+  /// Given example means that 3 segments should be created. 'a' will take values 0-10. 'b' 10-40 and 'c' 40-45.
   final Map<String, double> segments;
+
+  /// List of the colors for [segments] created before.
   final List<Color> colors;
+
+  /// Determine the type of widget to be used.
   final HorizontalCompassType type;
+
+  /// Determine look of the ruler.
   final HorizontalCompassRulerPosition rulerPosition;
+
+  /// Cursor (a main line places in the central point of the widget) look, invisible by default.
   final Color cursorColor;
+
+  /// And width for the cursor.
   final double cursorWidth;
+
+  /// Ruler line width.
   final double lineWidth;
+
+  /// Every 'n' line will be bigger.
   final int markPosition;
 
   const HorizontalCompass({
@@ -149,6 +188,7 @@ class CompassPainter extends CustomPainter {
     required this.markPosition,
   });
 
+  /// Get valid color for current segment.
   int getColorIndexForDegree(double degree) {
     double currentSegmentEnd = start;
     int index = 0;
