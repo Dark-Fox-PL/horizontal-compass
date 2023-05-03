@@ -4,3 +4,6 @@
 
 ## 1.0.1
 * Organize package dependencies.
+
+## 1.0.2
+* Pubspec adjustments.
