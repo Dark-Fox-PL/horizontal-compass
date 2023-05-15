@@ -1,6 +1,6 @@
 name: horizontal_compass
 description: "A customizable horizontal compass (like Skyrim's top bar navigation?), mostly to be used as a horizontal chart that can be looped infinitely."
-version: 1.0.2
+version: 1.0.3
 homepage: 'https://darkfox.pl'
 
 environment:

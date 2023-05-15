@@ -271,9 +271,11 @@ class CompassPainter extends CustomPainter {
         }
       }
 
+      double centerOffset = (size.width / 2) - (value * spacing);
+
       canvas.drawLine(
-        Offset((i - value + spacing) * segmentWidth, lineTop),
-        Offset((i - value + spacing) * segmentWidth, lineBottom),
+        Offset((i * spacing) + centerOffset, lineTop),
+        Offset((i * spacing) + centerOffset, lineBottom),
         markerPaint,
       );
     }

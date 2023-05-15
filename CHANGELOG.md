@@ -7,3 +7,6 @@
 
 ## 1.0.2
 * Pubspec adjustments.
+
+## 1.0.3
+* Fix ruler alignment to center.
