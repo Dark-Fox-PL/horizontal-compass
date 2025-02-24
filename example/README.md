@@ -1,6 +1,6 @@
-# horizontal_compass_example
+# new_example
 
-Demonstrates how to use the horizontal_compass plugin.
+A new Flutter project.
 
 ## Getting Started
 

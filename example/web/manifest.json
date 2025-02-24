@@ -1,11 +1,11 @@
 {
-    "name": "horizontal_compass_example",
-    "short_name": "horizontal_compass_example",
+    "name": "new_example",
+    "short_name": "new_example",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Demonstrates how to use the horizontal_compass plugin.",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
