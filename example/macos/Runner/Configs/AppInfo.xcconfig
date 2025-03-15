@@ -5,10 +5,10 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = horizontal_compass_example
+PRODUCT_NAME = new_example
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = pl.darkfox.horizontalCompassExample
+PRODUCT_BUNDLE_IDENTIFIER = com.example.newExample
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2023 pl.darkfox. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2025 com.example. All rights reserved.
