@@ -10,3 +10,6 @@
 
 ## 1.0.3
 * Fix ruler alignment to center.
+
+## 1.0.4
+* Fix ruler alignment to center.
